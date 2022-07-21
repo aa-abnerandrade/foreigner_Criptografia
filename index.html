@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head> <!-- CABEÇA INTRA -->
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="home-style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
+        <title>Criptografia ALU-ONE</title>
+
+    </head>
+
+<!--             ======== DIVISÃO CABEÇA - CORPO ========             -->
+
+    <body class="corpo"> <!-- CORPO MOSTRA -->
+        <header class="cabecalho-home"> <!-- CABEÇALHO-->
+            <img src="imagens/logo_aluone.png" alt="Logo do Alu-One, Letra A">
+
+
+        </header>
+
+        <main class="conteudo-home"> <!-- CONTEÚDO -->
+        
+            <section class="EntraTexto"> <!-- ========== SEÇÃO ENTRA TEXTO-->
+
+                <textarea name="" id="TextoEntrada" cols="50" rows="10" placeholder="digite teu texto"></textarea>
+
+                <label for="" id="info-restricaocripto">Apenas letras maiúsulas e minúsculas</label>
+            
+                <div class="botoes"> <!-- ================ BOTÕES -->
+            
+                    <button id="botao-criptar" onclick="botaoCriptografar()">
+                        <p>Criptografar</p>
+                    </button>
+    
+                    <button id="botao-descriptar">
+                        <p>Descriptografar</p>
+                    </button>
+    
+                </div>
+            
+            
+            </section>
+
+            
+
+            <section class="SaiResultado"> <!-- =============== SEÇÃO RESULTADO SAÍDA MENSAGEM -->
+
+                
+                <textarea name="" id="MensagemSaida" cols="50" rows="10" placeholder="o resultado aparecerá aqui"></textarea>
+
+            </section>
+
+            
+        </main>
+
+
+
+    <!-- ============================== SCRIPT -->
+    <script src="home-script.js"></script>    
+
+    </body>
+
+
+
+
+
+</html>
