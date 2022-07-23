@@ -1,8 +1,8 @@
-.corpo { /* CORPO TODO */
+body { /* CORPO TODO */
+    font-family: "Inter", sans-serif;
     font-size: 30px;
     line-height: 48px;
-    background: #F3F5FC;
-    ;
+    background-color: #F3F5FC;
 }
 
 
@@ -31,8 +31,9 @@ img .cabecalho-home {
     height: 200px;
     width: 45%;
     display: inline-block;
-    margin: 10px 1em 10px 1em;
+    margin: 20px 1em 20px 1em;
     padding: 10px;
+    position: relative;
 }
 
 #info-restricaocripto {
@@ -42,6 +43,7 @@ img .cabecalho-home {
 
 .botoes {
     display: flex;
+    flex-direction: row;
     margin: 20px;
 }
 
@@ -50,6 +52,14 @@ img .cabecalho-home {
     background: #0A3871;
     margin: 15px;
 }
+
+#TextoEntrada {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size:  15px;
+    line-height: 200%;
+}
+
 
 #botao-descriptar {
     margin: 15px;
@@ -61,7 +71,7 @@ img .cabecalho-home {
     height: 200px;
     width: 45%;
     display: inline-block;
-    margin: 10px 1em 10px 1em;
+    margin: 20px 1em 20px 1em;
     padding: 10px;
     position: relative;
     
@@ -70,4 +80,8 @@ img .cabecalho-home {
 #MensagemSaida {
     background-image: url("imagens/boneco.png");
     background-repeat: no-repeat;
+}
+
+#infos-do-desenvolvedor {
+    font-size: 10px;
 }

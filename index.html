@@ -2,68 +2,65 @@
 
 <html lang="pt-BR">
 
-    <head> <!-- CABEÇA INTRA -->
-       
+    <head> <!-- HEAD INTRA -->
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="home-style.css">
+        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-
-        <title>Criptografia ALU-ONE</title>
-
+        <title>Criptografia ALUCLE</title>
     </head>
 
-<!--             ======== DIVISÃO CABEÇA - CORPO ========             -->
+<!--             ======== DIVISÃO HEAD - BODY ========  -->
 
-    <body class="corpo"> <!-- CORPO MOSTRA -->
-        <header class="cabecalho-home"> <!-- CABEÇALHO-->
-            <img src="imagens/logo_aluone.png" alt="Logo do Alu-One, Letra A">
-
+    <body> <!-- BODY AMOSTRA -->
+        
+        <header class="cabecalho-home"> <!-- CABEÇALHO DO BODY-->
+            <img src="imagens/logo_alucle.png" alt="Logo do AluCle, Letra A">
 
         </header>
 
-        <main class="conteudo-home"> <!-- CONTEÚDO -->
+        <main class="conteudo-home"> <!-- ==================== CONTEÚDO -->
         
-            <section class="EntraTexto"> <!-- ========== SEÇÃO ENTRA TEXTO-->
-
-                <textarea name="" id="TextoEntrada" cols="50" rows="10" placeholder="digite teu texto"></textarea>
-
+            <section class="EntraTexto"> <!-- ===================== SEÇÃO ENTRA TEXTO >>>>  -->
+                <textarea name="" id="TextoEntrada" cols="60" rows="12" placeholder="digite teu texto"></textarea>
                 <label for="" id="info-restricaocripto">Apenas letras maiúsulas e minúsculas</label>
             
                 <div class="botoes"> <!-- ================ BOTÕES -->
-            
                     <button id="botao-criptar" onclick="botaoCriptografar()">
                         <p>Criptografar</p>
                     </button>
     
-                    <button id="botao-descriptar">
+                    <button id="botao-descriptar" onclick="botaoDescriptografar()">
                         <p>Descriptografar</p>
                     </button>
-    
                 </div>
+            </section> <!-- ================================== FINAL SEÇÃO ENTRA TEXTO ^^^^ -->
+
             
-            
+
+
+            <section class="SaiResultado"> <!-- =============== SEÇÃO RESULTADO SAÍDA MENSAGEM >>> -->  
+                <textarea name="" id="MensagemSaida" cols="40" rows="25" placeholder="o resultado aparecerá aqui"></textarea>
+
             </section>
 
             
+        </main> <!-- =============== FINAL SEÇÃO RESULTADO SAÍDA MENSAGEM ^^^^ -->
 
-            <section class="SaiResultado"> <!-- =============== SEÇÃO RESULTADO SAÍDA MENSAGEM -->
-
-                
-                <textarea name="" id="MensagemSaida" cols="50" rows="10" placeholder="o resultado aparecerá aqui"></textarea>
-
-            </section>
-
-            
-        </main>
-
-
+        <footer>
+            <div id="infos-do-desenvolvedor">
+                <p>Desennvolvido por Abner Andrade</p>
+                <p>Aluno da turma 2 do Programa Oracle Next Education</p>
+            </div>
+        </footer>    
 
     <!-- ============================== SCRIPT -->
-    <script src="home-script.js"></script>    
+    <script src="script-home.js"></script>
+    <script src="cripto.js"></script>    
 
     </body>
 
