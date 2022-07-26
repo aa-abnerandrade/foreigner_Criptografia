@@ -5,5 +5,12 @@ console.log(inputTexto.value); // Console
 console.log(outputTexto.value); // Console
 
 
+function botaoCopiar() {
+
+}
+
+
+
+
 
 
