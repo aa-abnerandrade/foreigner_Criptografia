@@ -1,7 +1,7 @@
 body { /* CORPO TODO */
     width: auto;
     max-width: 100%;
-    font-family: "Bungee", cursive;
+    font-family: "Bungee Hairline", cursive;
     font-size: 30px;
     line-height: 48px;
     background-color: #F3F5FC;
@@ -45,23 +45,28 @@ body { /* CORPO TODO */
 .conteudo-home { /* ======================= CONTEÚDO */ 
     width: auto;
     max-width: 100%;
-    display: flex;
-    margin-left: 2em;
+    display: block;
     margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 2em;
 }
 
 textarea {
     border: none;
     border-radius: 20px;
+    resize: none;
 }
 
 textarea:focus, input:focus, select:focus {
     outline: 0;
     border: 0 none;
+    resize: none;
 } 
 
 .EntraTexto {
-    font-size: 20px;
+    font-family: "Bungee Hairline", cursive;
+    font-size: 10px;
     height: 100%;
     display: inline-block;
     margin-right: 2em;
@@ -76,25 +81,24 @@ textarea:focus, input:focus, select:focus {
     padding: 15px;
     font-weight: bold;
     font-size:  15px;
-    line-height: 200%;
     background-color: #F3F5FC;
 }
 
 #info-restricaocripto {
     color: #306DA5;
+    font-family: "Bungee", cursive;
     font-size: 10px;
     width: auto;
     display: block;
     text-align: left;
 }
 
-
 /* ================ BOTÕES ====  */
 
 .botoes {
     width: 100%;
     height: auto;
-    margin: 10px 0 40px 0;
+    margin: 10px 1em 5px 1em;
 }
 
 #botao-criptar {
@@ -104,7 +108,7 @@ textarea:focus, input:focus, select:focus {
     background: #306DA5;
     font-weight: bold;
     border-radius: 5px;
-    border: none;
+    border-color: #306DA5;
 }
 
 #botao-descriptar {
@@ -115,23 +119,33 @@ textarea:focus, input:focus, select:focus {
     text-decoration-style: bold;
     font-weight: bold;
     border-radius: 5px;
-    border: none;
+    border-color: #306DA5;
 }
 
 .SaiResultado {
+    font-family: "Bungee Hairline", cursive;
     font-size: 10px;
     float: right;
-    align-items: unset;
     margin: 0px 0 1em 2em;
+    position: relative;
 }
 
 #MensagemSaida {
+    font-family: "Bungee Hairline", cursive;
+    text-decoration-color: #306DA5;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 15px;
     max-width: 100%;
     max-height: 100%;
+    padding: 10px;
     padding-top: 25px;
     background-image: url("imagens/boneco.png");
     background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 30px;
 }
+
 
 footer {
     background-color: #306DA5;

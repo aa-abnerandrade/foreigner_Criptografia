@@ -5,8 +5,10 @@ console.log(inputTexto.value); // Console
 console.log(outputTexto.value); // Console
 
 
-function botaoCopiar() {
-
+function copiarResultado() {
+    var textoCopiado = document.querySelector("#MensagemSaida");
+    textoCopiado = textoCopiado.value;
+    console.log(textoCopiado); // Console
 }
 
 
