@@ -1,8 +1,8 @@
 function botaoCriptografar(){
     console.log("1 texto descriptografado é", inputTexto.value); // Console
-    var textoCriptografado = criptografando(inputTexto.value) ;
-    outputTexto.value = textoCriptografado
-    outputTexto.className
+    var textoCriptografado = criptografando(inputTexto.value);
+    document.getElementById("MensagemSaidaInicial").id = "MensagemSaidaFinal"; // MUDAR AQUI
+    outputTexto.value = textoCriptografado;
     // outputTexto.style.backgroundImage="none"
     console.log("a variavel textoCriptografado é ", textoCriptografado);
 }

@@ -2,8 +2,8 @@ body { /* CORPO TODO */
     width: auto;
     max-width: 100%;
     font-family: "Bungee Hairline", cursive;
-    font-size: 30px;
-    line-height: 48px;
+    font-size: 25px;
+    line-height: 32px;
     background-color: #F3F5FC;
 }
 
@@ -97,7 +97,7 @@ textarea:focus, input:focus, select:focus {
     content: "🛈   ";
     text-decoration-color: #306DA5;
     font-size: 20px;
-    bottom: 0;
+    vertical-align: top;
 }
 
 /* ================ BOTÕES ====  */
@@ -118,6 +118,7 @@ button:hover {
 
 #botao-criptar {
     font-family: "Bungee Outline";
+    font-weight: bold;
     font-size: 20px;
     color: #FFFFFF; 
     background: #306DA5;
@@ -127,7 +128,8 @@ button:hover {
 }
 
 #botao-descriptar {
-    font-family: "Bungee Outline";
+    font-family: "Bungee Outline", cursive;
+    font-weight: bold;
     font-size: 20px;
     color: #306DA5;
     background-color: #FFFFFF;
@@ -138,20 +140,20 @@ button:hover {
 
 .SaiResultado {
     font-family: "Bungee Hairline", cursive;
-    font-size: 10px;
-    float: right;
+    font-size: 15px;
+    float: inline-end;
     margin: 0px 0 1em 2em;
     display: inline-block;
     position: relative;
     vertical-align: top;
-    ;
 }
 
-#MensagemSaida {
+#MensagemSaidaInicial {
     font-family: "Bungee Hairline", cursive;
-    text-decoration-color: #306DA5;
+    color: #306DA5;
     font-size: 15px;
-    font-weight: bold;
+    text-align: center;
+    width: max-content;
     line-height: 15px;
     max-width: 100%;
     max-height: 100%;
@@ -159,6 +161,31 @@ button:hover {
     padding: 10px;
     padding-top: 25px;
     background-image: url("imagens/boneco.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 50px;
+    position: relative;
+}
+
+#MensagemSaidaInicial::placeholder {
+    font-size: 25px;
+    color: #306DA5;
+    font-weight: 600;
+    position: absolute;
+    bottom: 4em;
+}
+
+#MensagemSaidaFinal {
+    font-family: "Bungee", cursive;
+    color: #306DA5;
+    font-size: 15px;
+    line-height: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    padding: 10px;
+    padding-top: 25px;
+    background-image: none;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 50px;
@@ -190,13 +217,25 @@ footer {
     position: relative;
     max-width: 100%;
     width: auto;
-    height: 2em;
     padding: 10px;
     bottom: 0;
 }
 
+#links-do-desenvolvedor {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+#links-do-desenvolvedor img {
+    max-width: 50x;
+    max-height: 50px;
+    display: inline;
+}
+
 #infos-do-desenvolvedor {
     font-size: 10px;
+    font-weight: bold;
     text-align: center;
     color: #F3F5FC;
     line-height: 12px; 
@@ -204,6 +243,5 @@ footer {
     padding: auto;
     position: relative;
     margin: auto;
-    margin-top: 2%;
     vertical-align: middle;
 }
