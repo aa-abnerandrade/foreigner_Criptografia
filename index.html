@@ -5,11 +5,13 @@
     <head> <!-- HEAD INTRA -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <meta name="viewport" content="width=940, initial-scale=1.0">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
 
         <title>Criptografia ALUCLE</title>
     </head>
@@ -19,15 +21,15 @@
     <body> <!-- BODY AMOSTRA -->
         
         <header class="cabecalho-home"> <!-- CABEÇALHO DO BODY-->
-            <img src="imagens/logo_alucle.png" alt="Logo do AluCle, Letra A">
-
+            <img src="imagens/logo-alucle150.png" alt="Logo do AluCle, Letra A">
+            <h1>Tradutor de Criptografia <strong>ALUCLE</strong></h1>
         </header>
 
         <main class="conteudo-home"> <!-- ==================== CONTEÚDO -->
         
-            <section class="EntraTexto"> <!-- ===================== SEÇÃO ENTRA TEXTO >>>>  -->
-                <textarea name="" id="TextoEntrada" cols="60" rows="12" placeholder="digite teu texto"></textarea>
-                <label for="" id="info-restricaocripto">Apenas letras maiúsulas e minúsculas</label>
+            <section class="EntraTexto"> <!-- ================ SEÇÃO ENTRA TEXTO >>>>  -->
+                <textarea name="" id="TextoEntrada" cols="75" rows="12" placeholder="digite teu texto"></textarea>
+                <label for="" id="info-restricaocripto">Apenas letras maiúsculas (sem acentos e pontuações)</label>
             
                 <div class="botoes"> <!-- ================ BOTÕES -->
                     <button id="botao-criptar" onclick="botaoCriptografar()">
@@ -43,12 +45,18 @@
             
 
 
-            <section class="SaiResultado"> <!-- =============== SEÇÃO RESULTADO SAÍDA MENSAGEM >>> -->  
-                <textarea name="" id="MensagemSaida" cols="40" rows="25" placeholder="o resultado aparecerá aqui"></textarea>
+            <section class="SaiResultado"> <!-- ===== SEÇÃO RESULTADO SAÍDA MENSAGEM >>> -->  
+                <textarea name="" id="MensagemSaida" cols="50" rows="32" placeholder="a tradução será exibida aqui"></textarea>
 
+                <div id="div-Copiar">
+                    <button id="botaoCopiar" onclick="copiarResultado()">
+                        <p>Copiar</p>
+                    </button>
+                </div>
+                
             </section>
 
-            
+
         </main> <!-- =============== FINAL SEÇÃO RESULTADO SAÍDA MENSAGEM ^^^^ -->
 
         <footer>

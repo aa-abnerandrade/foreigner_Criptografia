@@ -1,106 +1,158 @@
 body { /* CORPO TODO */
-    font-family: "Inter", sans-serif;
+    width: auto;
+    max-width: 100%;
+    font-family: "Bungee", cursive;
     font-size: 30px;
     line-height: 48px;
     background-color: #F3F5FC;
 }
 
+/* ==================== CABECALHO =========== */
 
-.cabecalho-home { /* ==================== CABECALHO */
-    height: 50px;
-    width: 100%;
-    margin: auto;
-    position: relative;
+.cabecalho-home { 
+    height: 70px;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 1em;
     background-color: #F3F5FC;
 }
 
-img .cabecalho-home {
-    size: 30px 30px;
-    left: 40px;
+.cabecalho-home img {
+    max-width: 70px;
+    max-height: 70px;
+    margin-top: 1%;
+    display: inline;
+    float: left;
 }
 
-.conteudo-home { /* ======================= CONTEÚDO */
-    /*background-color: #55AAAA;*/
-    display: flex;
-    margin: 10px;
-}
-
-.EntraTexto {
-    font-size: 20px;
-    text-align: center;
-    height: 200px;
-    width: 45%;
+.cabecalho-home h1 {
+    max-height: 70px;
+    max-width: 250px;
+    font-family: "Bungee", cursive;
+    color: #306DA5;
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 5px;
+    vertical-align: text-bottom;
     display: inline-block;
-    margin: 20px 1em 20px 1em;
-    padding: 10px;
     position: relative;
 }
 
-#info-restricaocripto {
-    font-size: 10px;
-    display: inline-block;
-    text-align: left;
+.cabecalho-home strong {
+    font-size: 25px;
 }
 
-.botoes {
+.conteudo-home { /* ======================= CONTEÚDO */ 
+    width: auto;
+    max-width: 100%;
     display: flex;
-    flex-direction: row;
-    margin: 20px;
+    margin-left: 2em;
+    margin-top: 30px;
 }
 
-#botao-criptar {
-    color: #FFFFFF; 
-    background: #0A3871;
-    margin: 15px;
+textarea {
+    border: none;
+    border-radius: 20px;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+    border: 0 none;
+} 
+
+.EntraTexto {
+    font-size: 20px;
+    height: 100%;
+    display: inline-block;
+    margin-right: 2em;
+    padding: 5px;
+    position: relative;
+    text-align: center;
 }
 
 #TextoEntrada {
-    font-family: "Inter";
-    font-weight: 400;
+    font-family: "Bungee Hairline", cursive;
+    text-decoration-color: #306DA5;
+    padding: 15px;
+    font-weight: bold;
     font-size:  15px;
     line-height: 200%;
+    background-color: #F3F5FC;
+}
+
+#info-restricaocripto {
+    color: #306DA5;
+    font-size: 10px;
+    width: auto;
+    display: block;
+    text-align: left;
 }
 
 
+/* ================ BOTÕES ====  */
+
+.botoes {
+    width: 100%;
+    height: auto;
+    margin: 10px 0 40px 0;
+}
+
+#botao-criptar {
+    font-family: "Bungee Outline";
+    font-size: 20px;
+    color: #FFFFFF; 
+    background: #306DA5;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+
 #botao-descriptar {
-    margin: 15px;
+    font-family: "Bungee Outline";
+    font-size: 20px;
+    color: #306DA5;
+    background-color: #FFFFFF;
+    text-decoration-style: bold;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
 }
 
 .SaiResultado {
-    font-size: 20px;
-    text-align: center;
-    height: 200px;
-    width: 45%;
-    display: inline-block;
-    margin: 20px 1em 20px 1em;
-    padding: 10px;
-    position: relative; 
+    font-size: 10px;
+    float: right;
+    align-items: unset;
+    margin: 0px 0 1em 2em;
 }
 
 #MensagemSaida {
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 25px;
     background-image: url("imagens/boneco.png");
     background-repeat: no-repeat;
 }
 
 footer {
-    background-color: #2287AA;
-    position: absolute;
-    width: 100%;
-    height: 4em;
-    padding: 2px;
+    background-color: #306DA5;
+    display: block;
+    position: relative;
+    max-width: 100%;
+    width: auto;
+    height: 2em;
+    padding: 10px;
     bottom: 0;
 }
 
 #infos-do-desenvolvedor {
     font-size: 10px;
-    size: 100px;
     text-align: center;
+    color: #F3F5FC;
     line-height: 12px; 
     width: auto;   
     padding: auto;
     position: relative;
     margin: auto;
-    margin-top: 2px;
-    vertical-align:middle;
-
+    margin-top: 2%;
+    vertical-align: middle;
 }
