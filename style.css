@@ -46,7 +46,6 @@ body { /* CORPO TODO */
     width: auto;
     max-width: 100%;
     display: block;
-    margin-top: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
     margin-left: 2em;
@@ -71,6 +70,7 @@ textarea:focus, input:focus, select:focus {
     display: inline-block;
     margin-right: 2em;
     padding: 5px;
+    margin-top: 30px;
     position: relative;
     text-align: center;
 }
@@ -93,6 +93,13 @@ textarea:focus, input:focus, select:focus {
     text-align: left;
 }
 
+#info-restricaocripto:before {
+    content: "🛈   ";
+    text-decoration-color: #306DA5;
+    font-size: 20px;
+    bottom: 0;
+}
+
 /* ================ BOTÕES ====  */
 
 .botoes {
@@ -101,14 +108,22 @@ textarea:focus, input:focus, select:focus {
     margin: 10px 1em 5px 1em;
 }
 
+button:hover {
+    font-weight: bold;
+	opacity: 0.99;
+    box-shadow: 0 0 5px #2e3456;
+    transform: scale(1.1);
+    transition: 400ms;
+}
+
 #botao-criptar {
     font-family: "Bungee Outline";
     font-size: 20px;
     color: #FFFFFF; 
     background: #306DA5;
-    font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px;
     border-color: #306DA5;
+    margin-right: 1em;
 }
 
 #botao-descriptar {
@@ -116,10 +131,9 @@ textarea:focus, input:focus, select:focus {
     font-size: 20px;
     color: #306DA5;
     background-color: #FFFFFF;
-    text-decoration-style: bold;
-    font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px;
     border-color: #306DA5;
+    margin-left: 1em;
 }
 
 .SaiResultado {
@@ -127,7 +141,10 @@ textarea:focus, input:focus, select:focus {
     font-size: 10px;
     float: right;
     margin: 0px 0 1em 2em;
+    display: inline-block;
     position: relative;
+    vertical-align: top;
+    ;
 }
 
 #MensagemSaida {
@@ -138,12 +155,32 @@ textarea:focus, input:focus, select:focus {
     line-height: 15px;
     max-width: 100%;
     max-height: 100%;
+    display: flex;
     padding: 10px;
     padding-top: 25px;
     background-image: url("imagens/boneco.png");
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 30px;
+    background-position-y: 50px;
+    position: relative;
+}
+
+#div-Copiar {
+    width: 100%;
+    text-align: center;
+    display: flexbox;
+    position: absolute;
+    bottom: 1em;
+}
+
+#botaoCopiar {
+    font-family: "Bungee", cursive;
+    font-size: 15px;
+    background: #FFFFFF; 
+    color: #306DA5;
+    position: relative;
+    border-radius: 15px;
+    border-color: #306DA5;
 }
 
 

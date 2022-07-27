@@ -9,6 +9,8 @@ function copiarResultado() {
     var textoCopiado = document.querySelector("#MensagemSaida");
     textoCopiado = textoCopiado.value;
     console.log(textoCopiado); // Console
+    navigator.clipboard.writeText(textoCopiado);
+
 }
 
 
