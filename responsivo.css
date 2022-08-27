@@ -1,0 +1,250 @@
+@media screen and (max-width: 512px) {
+    /* CORPO TODO */
+    
+    body { 
+        background-color: #F3F5FC;
+        display: flex;
+        flex-direction: column;
+        font-family: "Bungee Hairline", cursive;
+        font-size: 25px;
+        line-height: 30px;
+        width: 100vw;
+    }
+    
+    /* ==================== CABECALHO =========== */
+    
+    .cabecalho-home { 
+        background-color: #306DA5;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 35px 0 0 0;
+        vertical-align: middle;
+        width: 100vw;
+    }
+    
+    .cabecalho-home img {
+        display: none;
+    }
+    
+    .cabecalho-home h1 {
+        color: #F3F5FC;
+        display: inline-block;
+        font-family: "Bungee", cursive;
+        font-size: 20px;
+        line-height: 10px;
+        max-width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        width: 100vw;
+    }
+    
+    .cabecalho-home strong {
+        font-size: 20px;
+    }
+    
+    .conteudo-home { /* ======================= CONTEÚDO */ 
+        width: 10vw;
+        display: block;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        margin-left: 2em;
+    }
+    
+    textarea {
+        border: none;
+        border-radius: 20px;
+        resize: none;
+    }
+    
+    textarea:focus, input:focus, select:focus {
+        outline: 0;
+        border: 0 none;
+        resize: none;
+    } 
+    
+    .EntraTexto {
+        font-family: "Bungee Hairline", cursive;
+        font-size: 10px;
+        height: 100%;
+        display: inline-block;
+        margin-right: 2em;
+        padding: 5px;
+        margin-top: 30px;
+        max-width: 80vw;
+        position: relative;
+        text-align: center;
+    }
+    
+    #TextoEntrada {
+        font-family: "Bungee Hairline", cursive;
+        text-decoration-color: #306DA5;
+        padding: 15px;
+        font-weight: bold;
+        font-size:  15px;
+        background-color: #F3F5FC;
+        max-width: 80vw;
+    }
+    
+    #info-restricaocripto {
+        color: #306DA5;
+        font-family: "Bungee", cursive;
+        font-size: 10px;
+        width: auto;
+        display: block;
+        text-align: left;
+    }
+    
+    #info-restricaocripto:before {
+        content: "🛈   ";
+        text-decoration-color: #306DA5;
+        font-size: 20px;
+        vertical-align: top;
+    }
+    
+    /* ================ BOTÕES ====  */
+    
+    .botoes {
+        width: 100%;
+        height: auto;
+        margin: 10px 1em 5px 1em;
+    }
+    
+    button:hover {
+        font-weight: bold;
+        opacity: 0.99;
+        box-shadow: 0 0 5px #2e3456;
+        transform: scale(1.1);
+        transition: 400ms;
+    }
+    
+    #botao-criptar {
+        font-family: "Bungee Outline";
+        font-weight: bold;
+        font-size: 20px;
+        color: #FFFFFF; 
+        background: #306DA5;
+        border-radius: 10px;
+        border-color: #306DA5;
+        margin-right: 1em;
+    }
+    
+    #botao-descriptar {
+        font-family: "Bungee Outline", cursive;
+        font-weight: bold;
+        font-size: 20px;
+        color: #306DA5;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        border-color: #306DA5;
+        margin-left: 1em;
+    }
+    
+    .SaiResultado {
+        font-family: "Bungee Hairline", cursive;
+        font-size: 15px;
+        float: inline-end;
+        margin: 0px 0 1em 2em;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+    }
+    
+    #MensagemSaidaInicial {
+        font-family: "Bungee Hairline", cursive;
+        color: #306DA5;
+        font-size: 15px;
+        text-align: center;
+        width: max-content;
+        line-height: 15px;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        padding: 10px;
+        padding-top: 25px;
+        background-image: url("imagens/boneco.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 50px;
+        position: relative;
+    }
+    
+    #MensagemSaidaInicial::placeholder {
+        font-size: 25px;
+        color: #306DA5;
+        font-weight: 600;
+        position: absolute;
+        bottom: 4em;
+    }
+    
+    #MensagemSaidaFinal {
+        font-family: "Bungee", cursive;
+        color: #306DA5;
+        font-size: 15px;
+        line-height: 15px;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        padding: 10px;
+        padding-top: 25px;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 50px;
+        position: relative;
+    }
+    
+    #div-Copiar {
+        width: 100%;
+        text-align: center;
+        display: flexbox;
+        position: absolute;
+        bottom: 1em;
+    }
+    
+    #botaoCopiar {
+        font-family: "Bungee", cursive;
+        font-size: 15px;
+        background: #FFFFFF; 
+        color: #306DA5;
+        position: relative;
+        border-radius: 15px;
+        border-color: #306DA5;
+    }
+    
+    
+    footer {
+        background-color: #306DA5;
+        display: block;
+        position: relative;
+        max-width: 100%;
+        width: auto;
+        padding: 10px;
+        bottom: 0;
+    }
+    
+    #links-do-desenvolvedor {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #links-do-desenvolvedor img {
+        max-width: 50x;
+        max-height: 50px;
+        display: inline;
+    }
+    
+    #infos-do-desenvolvedor {
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        color: #F3F5FC;
+        line-height: 12px; 
+        width: auto;   
+        padding: auto;
+        position: relative;
+        margin: auto;
+        vertical-align: middle;
+    }
+}
