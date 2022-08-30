@@ -1,5 +1,5 @@
 body { /* CORPO TODO */
-    width: 100vw;
+    max-width: 99.99vw;
     font-family: "Bungee Hairline", cursive;
     font-size: 25px;
     line-height: 32px;
@@ -10,7 +10,7 @@ body { /* CORPO TODO */
 
 .cabecalho-home { 
     height: 70px;
-    max-width: 100%;
+    max-width: 99%;
     padding-top: 20px;
     padding-left: 1em;
     background-color: #F3F5FC;
@@ -42,9 +42,9 @@ body { /* CORPO TODO */
 }
 
 .conteudo-home { /* ======================= CONTEÚDO */ 
-    width: 99.99vw;
+    max-width: 99.99vw;
     display: block;
-    margin: 0.25rem;
+    margin: 0rem;
 }
 
 textarea {
@@ -63,7 +63,6 @@ textarea:focus, input:focus, select:focus {
     display: inline-block;
     font-family: "Bungee Hairline", cursive;
     font-size: 10px;
-    float: left;
     height: 100%;
     margin-right: 0.50rem;
     margin-top: 30px;
@@ -140,7 +139,6 @@ button:hover {
 .SaiResultado {
     font-family: "Bungee Hairline", cursive;
     font-size: 15px;
-    float: inline-end;
     margin: 0;
     margin-left: 1rem;
     display: inline-block;
@@ -214,15 +212,15 @@ footer {
     background-color: #306DA5;
     display: block;
     position: relative;
+    margin: 0;
     margin-top: 1rem;
-    max-width: 100%;
     padding: 10px;
     bottom: 0;
-    width: auto;
+    max-width: 99.99vw;
 }
 
 #links-do-desenvolvedor {
-    width: 100%;
+    width: 98%;
     display: inline-block;
     text-align: center;
 }
@@ -239,9 +237,9 @@ footer {
     text-align: center;
     color: #F3F5FC;
     line-height: 12px; 
-    width: auto;   
+    width: 98%;   
     padding: auto;
     position: relative;
-    margin: auto;
+    margin: auto 0;
     vertical-align: middle;
 }
