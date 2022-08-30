@@ -14,24 +14,28 @@
     /* ==================== CABECALHO =========== */
     
     .cabecalho-home { 
-        background-color: #306DA5;
+        align-items: center;
+        background-color: #FDFDFD;
         display: flex;
         flex-direction: column;
         height: auto;
-        padding: 35px 0 0 0;
+        padding: 0.25rem 0 0 0;
         vertical-align: middle;
         width: 100vw;
     }
     
     .cabecalho-home img {
-        display: none;
+        max-width: 50px;
+        max-height: 50px;
+        display: inline-block;
     }
     
     .cabecalho-home h1 {
-        color: #F3F5FC;
+        color: #306DA5;
         display: inline-block;
-        font-family: "Bungee", cursive;
+        font-family: "Bungee Hairline", cursive;
         font-size: 20px;
+        font-weight: 800;
         line-height: 10px;
         max-width: 100%;
         text-align: center;
@@ -44,11 +48,11 @@
     }
     
     .conteudo-home { /* ======================= CONTEÚDO */ 
-        width: 10vw;
-        display: block;
-        margin-right: 30px;
-        margin-bottom: 30px;
-        margin-left: 2em;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        margin: 0;
     }
     
     textarea {
@@ -64,39 +68,36 @@
     } 
     
     .EntraTexto {
-        font-family: "Bungee Hairline", cursive;
+        display: flex;
+        flex-direction: column;
+        font-family: "Bungee", cursive;
         font-size: 10px;
-        height: 100%;
-        display: inline-block;
-        margin-right: 2em;
+        max-width: 340px;
         padding: 5px;
-        margin-top: 30px;
-        max-width: 80vw;
-        position: relative;
         text-align: center;
     }
     
     #TextoEntrada {
-        font-family: "Bungee Hairline", cursive;
-        text-decoration-color: #306DA5;
-        padding: 15px;
-        font-weight: bold;
-        font-size:  15px;
         background-color: #F3F5FC;
-        max-width: 80vw;
+        font-family: "Bungee", cursive;
+        font-size:  15px;
+        font-weight: bold;
+        max-width: 340px;
+        padding: 15px;
+        text-decoration-color: #306DA5;
     }
     
     #info-restricaocripto {
         color: #306DA5;
-        font-family: "Bungee", cursive;
-        font-size: 10px;
-        width: auto;
+        font-family: "Bungee Hairline", cursive;
+        font-size: 9px;
+        font-weight: 800;
         display: block;
         text-align: left;
     }
     
     #info-restricaocripto:before {
-        content: "🛈   ";
+        content: "🛈 ";
         text-decoration-color: #306DA5;
         font-size: 20px;
         vertical-align: top;
@@ -141,11 +142,12 @@
     }
     
     .SaiResultado {
+        display: inline-block;
+        float: inline-end;
         font-family: "Bungee Hairline", cursive;
         font-size: 15px;
-        float: inline-end;
-        margin: 0px 0 1em 2em;
-        display: inline-block;
+        margin: 0;
+        max-width: 340px;
         position: relative;
         vertical-align: top;
     }
