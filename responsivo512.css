@@ -8,20 +8,20 @@
         font-family: "Bungee Hairline", cursive;
         font-size: 25px;
         line-height: 30px;
-        width: 100vw;
+        width: 99.9vw;
     }
     
     /* ==================== CABECALHO =========== */
     
     .cabecalho-home { 
         align-items: center;
-        background-color: #FDFDFD;
+        background-color: #F3F5FC;
         display: flex;
         flex-direction: column;
         height: auto;
-        padding: 0.25rem 0 0 0;
+        padding: 0.25rem 0;
         vertical-align: middle;
-        width: 100vw;
+        width: 100%;
     }
     
     .cabecalho-home img {
@@ -72,6 +72,7 @@
         flex-direction: column;
         font-family: "Bungee", cursive;
         font-size: 10px;
+        margin: 0;
         max-width: 340px;
         padding: 5px;
         text-align: center;
@@ -106,9 +107,14 @@
     /* ================ BOTÕES ====  */
     
     .botoes {
-        width: 100%;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         height: auto;
-        margin: 10px 1em 5px 1em;
+        margin: 1rem 0;
+        width: 100%;
     }
     
     button:hover {
@@ -127,7 +133,7 @@
         background: #306DA5;
         border-radius: 10px;
         border-color: #306DA5;
-        margin-right: 1em;
+        margin: 0;
     }
     
     #botao-descriptar {
@@ -138,18 +144,18 @@
         background-color: #FFFFFF;
         border-radius: 10px;
         border-color: #306DA5;
-        margin-left: 1em;
+        margin: 0;
     }
     
     .SaiResultado {
-        display: inline-block;
+        align-content: center;
+        display: flex;
         float: inline-end;
         font-family: "Bungee Hairline", cursive;
         font-size: 15px;
         margin: 0;
-        max-width: 340px;
+        max-width: 99%;
         position: relative;
-        vertical-align: top;
     }
     
     #MensagemSaidaInicial {
@@ -180,13 +186,13 @@
     }
     
     #MensagemSaidaFinal {
-        font-family: "Bungee", cursive;
         color: #306DA5;
+        display: flex;
+        font-family: "Bungee", cursive;
         font-size: 15px;
-        line-height: 15px;
+        line-height: 25px;
         max-width: 100%;
         max-height: 100%;
-        display: flex;
         padding: 10px;
         padding-top: 25px;
         background-image: none;
@@ -217,23 +223,23 @@
     
     footer {
         background-color: #306DA5;
-        display: block;
-        position: relative;
-        max-width: 100%;
-        width: auto;
-        padding: 10px;
         bottom: 0;
+        display: block;
+        margin-top: 0.75rem;
+        padding: 10px;
+        position: relative;
+        max-width: 100vw;
     }
     
     #links-do-desenvolvedor {
-        width: 100%;
+        width: 99%;
         display: inline-block;
         text-align: center;
     }
     
     #links-do-desenvolvedor img {
-        max-width: 50x;
-        max-height: 50px;
+        max-width: 40x;
+        max-height: 40px;
         display: inline;
     }
     
@@ -243,10 +249,10 @@
         text-align: center;
         color: #F3F5FC;
         line-height: 12px; 
-        width: auto;   
+        width: 99%%;   
         padding: auto;
         position: relative;
-        margin: auto;
+        margin: 0;
         vertical-align: middle;
     }
 }

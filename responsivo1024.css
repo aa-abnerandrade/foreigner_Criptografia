@@ -1,0 +1,262 @@
+@media screen and (max-width: 1024px) {
+    /* CORPO TODO */
+    
+    body { 
+        background-color: #F3F5FC;
+        display: flex;
+        flex-direction: column;
+        font-family: "Bungee Hairline", cursive;
+        font-size: 30px;
+        line-height: 30px;
+        width: 99.9vw;
+    }
+    
+    /* ==================== CABECALHO =========== */
+    
+    .cabecalho-home { 
+        align-items: center;
+        background-color: #F3F5FC;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 0.25rem 0;
+        vertical-align: middle;
+        width: 100%;
+    }
+    
+    .cabecalho-home img {
+        max-width: 50px;
+        max-height: 50px;
+        display: inline-block;
+    }
+    
+    .cabecalho-home h1 {
+        color: #306DA5;
+        display: inline-block;
+        font-family: "Bungee Hairline", cursive;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 10px;
+        max-width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        width: 100vw;
+    }
+    
+    .cabecalho-home strong {
+        font-size: 20px;
+    }
+    
+    .conteudo-home { /* ======================= CONTEÚDO */ 
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        margin: 0;
+    }
+    
+    textarea {
+        border: none;
+        border-radius: 20px;
+        resize: none;
+    }
+    
+    textarea:focus, input:focus, select:focus {
+        outline: 0;
+        border: 0 none;
+        resize: none;
+    } 
+    
+    .EntraTexto {
+        display: flex;
+        flex-direction: column;
+        font-family: "Bungee", cursive;
+        font-size: 2rem;
+        margin: 0;
+        max-width: 99vw;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    #TextoEntrada {
+        background-color: #F3F5FC;
+        font-family: "Bungee", cursive;
+        font-size:  2rem;
+        font-weight: bold;
+        max-height: 50vw;
+        max-width: 99vw;
+        padding: 15px;
+        text-decoration-color: #306DA5;
+    }
+    
+    #info-restricaocripto {
+        color: #306DA5;
+        font-family: "Bungee Hairline", cursive;
+        font-size: 15px;
+        font-weight: 800;
+        display: block;
+        text-align: center;
+    }
+    
+    #info-restricaocripto:before {
+        content: "🛈 ";
+        text-decoration-color: #306DA5;
+        font-size: 30px;
+        vertical-align: top;
+    }
+    
+    /* ================ BOTÕES ====  */
+    
+    .botoes {
+        
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+        margin: 1rem 0;
+        align-items: center;
+        width: 100%;
+    }
+    
+    button:hover {
+        font-weight: bold;
+        opacity: 0.99;
+        box-shadow: 0 0 5px #2e3456;
+        transform: scale(1.1);
+        transition: 400ms;
+    }
+    
+    #botao-criptar {
+        font-family: "Bungee Outline";
+        font-weight: bold;
+        font-size: 20px;
+        color: #FFFFFF; 
+        background: #306DA5;
+        border-radius: 10px;
+        border-color: #306DA5;
+        margin: 0.25rem;
+    }
+    
+    #botao-descriptar {
+        font-family: "Bungee Outline", cursive;
+        font-weight: bold;
+        font-size: 20px;
+        color: #306DA5;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        border-color: #306DA5;
+        margin: 0.25rem;
+    }
+    
+    .SaiResultado {
+        align-content: center;
+        display: flex;
+        float: inline-end;
+        font-family: "Bungee Hairline", cursive;
+        font-size: 1.5rem;
+        justify-content: center;
+        margin: 0;
+        min-width: 89vw;
+        position: relative;
+        vertical-align: middle;
+        width: 99vw;
+    }
+    
+    #MensagemSaidaInicial {
+        background-image: url("imagens/boneco.png");
+        background-position-x: center;
+        background-position-y: 50px;
+        background-repeat: no-repeat;
+        color: #306DA5;
+        display: flex;
+        line-height: 15px;
+        font-family: "Bungee Hairline", cursive;
+        font-size: 15px;
+        max-height: 100%;
+        min-width: 89vw;
+        padding: 10px;
+        padding-top: 25px;
+        text-align: center;
+        position: relative;
+        width: 99vw;
+    }
+    
+    #MensagemSaidaInicial::placeholder {
+        font-size: 25px;
+        color: #306DA5;
+        font-weight: 600;
+        position: absolute;
+        bottom: 4em;
+    }
+    
+    #MensagemSaidaFinal {
+        background-image: none;
+        background-position-x: center;
+        background-position-y: 50px;
+        background-repeat: no-repeat;
+        font-family: "Bungee", cursive;
+        font-size: 2rem;
+        line-height: 15px;
+        max-height: 100%;
+        min-width: 89vw
+        padding: 10px;
+        padding-top: 25px;
+        width: 99vw;
+        
+    }
+    
+    #div-Copiar {
+        bottom: 1em;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #botaoCopiar {
+        font-family: "Bungee", cursive;
+        font-size: 15px;
+        background: #FFFFFF; 
+        color: #306DA5;
+        position: relative;
+        border-radius: 15px;
+        border-color: #306DA5;
+    }
+    
+    
+    footer {
+        background-color: #306DA5;
+        bottom: 0;
+        display: block;
+        margin-top: 0.75rem;
+        padding: 10px;
+        position: relative;
+        max-width: 100vw;
+    }
+    
+    #links-do-desenvolvedor {
+        width: 99%;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #links-do-desenvolvedor img {
+        max-width: 40x;
+        max-height: 40px;
+        display: inline;
+    }
+    
+    #infos-do-desenvolvedor {
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        color: #F3F5FC;
+        line-height: 12px; 
+        width: 99%%;   
+        padding: auto;
+        position: relative;
+        margin: 0;
+        vertical-align: middle;
+    }
+}

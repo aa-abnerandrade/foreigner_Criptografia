@@ -1,6 +1,5 @@
 body { /* CORPO TODO */
-    width: auto;
-    max-width: 100%;
+    width: 100vw;
     font-family: "Bungee Hairline", cursive;
     font-size: 25px;
     line-height: 32px;
@@ -43,12 +42,9 @@ body { /* CORPO TODO */
 }
 
 .conteudo-home { /* ======================= CONTEÚDO */ 
-    width: auto;
-    max-width: 100%;
+    width: 99.99vw;
     display: block;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    margin-left: 2em;
+    margin: 0.25rem;
 }
 
 textarea {
@@ -64,13 +60,15 @@ textarea:focus, input:focus, select:focus {
 } 
 
 .EntraTexto {
+    display: inline-block;
     font-family: "Bungee Hairline", cursive;
     font-size: 10px;
+    float: left;
     height: 100%;
-    display: inline-block;
-    margin-right: 2em;
-    padding: 5px;
+    margin-right: 0.50rem;
     margin-top: 30px;
+    max-width: 55vw;
+    padding: 5px;
     position: relative;
     text-align: center;
 }
@@ -81,6 +79,7 @@ textarea:focus, input:focus, select:focus {
     padding: 15px;
     font-weight: bold;
     font-size:  15px;
+    max-width: 55vw;
     background-color: #F3F5FC;
 }
 
@@ -88,7 +87,7 @@ textarea:focus, input:focus, select:focus {
     color: #306DA5;
     font-family: "Bungee", cursive;
     font-size: 10px;
-    width: auto;
+    width: 100%;
     display: block;
     text-align: left;
 }
@@ -124,7 +123,7 @@ button:hover {
     background: #306DA5;
     border-radius: 10px;
     border-color: #306DA5;
-    margin-right: 1em;
+    margin: 0.75rem;
 }
 
 #botao-descriptar {
@@ -135,35 +134,35 @@ button:hover {
     background-color: #FFFFFF;
     border-radius: 10px;
     border-color: #306DA5;
-    margin-left: 1em;
+    margin:0.75rem
 }
 
 .SaiResultado {
     font-family: "Bungee Hairline", cursive;
     font-size: 15px;
     float: inline-end;
-    margin: 0px 0 1em 2em;
+    margin: 0;
+    margin-left: 1rem;
     display: inline-block;
     position: relative;
     vertical-align: top;
 }
 
 #MensagemSaidaInicial {
-    font-family: "Bungee Hairline", cursive;
-    color: #306DA5;
-    font-size: 15px;
-    text-align: center;
-    width: max-content;
-    line-height: 15px;
-    max-width: 100%;
-    max-height: 100%;
-    display: flex;
-    padding: 10px;
-    padding-top: 25px;
     background-image: url("imagens/boneco.png");
-    background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 50px;
+    background-repeat: no-repeat;
+    color: #306DA5;
+    display: flex;
+    font-family: "Bungee Hairline", cursive;
+    font-size: 15px;
+    line-height: 15px;
+    max-height: 100%;
+    max-width: 30vw;
+    text-align: center;
+    padding: 10px;
+    padding-top: 25px;
     position: relative;
 }
 
@@ -215,10 +214,11 @@ footer {
     background-color: #306DA5;
     display: block;
     position: relative;
+    margin-top: 1rem;
     max-width: 100%;
-    width: auto;
     padding: 10px;
     bottom: 0;
+    width: auto;
 }
 
 #links-do-desenvolvedor {
