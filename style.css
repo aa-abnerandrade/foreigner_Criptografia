@@ -210,13 +210,14 @@ button:hover {
 
 footer {
     background-color: #306DA5;
+    bottom: 0;
     display: block;
-    position: relative;
+    float: inline-end;
     margin: 0;
     margin-top: 1rem;
-    padding: 10px;
-    bottom: 0;
     max-width: 99.99vw;
+    padding: 10px;
+    position: relative;
 }
 
 #links-do-desenvolvedor {

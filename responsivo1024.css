@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media (min-width: 513px) and (max-width: 1024px) {
     /* CORPO TODO */
     
     body { 
@@ -199,9 +199,7 @@
         line-height: 15px;
         max-height: 100%;
         min-width: 89vw
-        padding: 10px;
-        padding-top: 25px;
-        width: 99vw;   
+        padding: 25px 10px; 
     }
     
     #div-Copiar {
